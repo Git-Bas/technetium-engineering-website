@@ -2544,19 +2544,19 @@ input, select, textarea {
 				}
 
 				.wrapper.style2 .icon.major:before {
-					color: #026873;
+					color: #5052b5;
 				}
 
 				.wrapper.style2-alt .icon.major:before {
-					color: #04BFBF;
+					color: #3e4094;
 				}
 
-				.wrapper.style3 .icon.major:before {      /*"what we do" solid icon color*/
-					color: #193f4a;
+				.wrapper.style3 .icon.major:before {
+					color: #b74e91;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
-					color: #183a43;
+					color: #953d75;
 				}
 
 /* Image */
@@ -3248,19 +3248,19 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #026873;
+			background-color: #5052b5;
 		}
 
 		.wrapper.style2-alt {
-			background-color: #04BFBF;
+			background-color: #3e4094;
 		}
 
-		.wrapper.style3 {                
-			background-color: #2f8ca3;         /*"what we do" background color*/
+		.wrapper.style3 {
+			background-color: #b74e91;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #164450;
+			background-color: #953d75;
 		}
 
 		.wrapper.fullscreen {
@@ -3524,7 +3524,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #193f4a;
+		background: #312450;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3761,7 +3761,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:before {
-				background: #05ecf1;
+				background: #4900f2;
 			}
 
 			#sidebar nav a:after {
