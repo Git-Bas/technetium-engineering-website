@@ -13,10 +13,11 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
+	   <div id="particle-canvas"></div>
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
+					<div class="logo-container"><img src="images/logo.png" alt="Technetium Engineering Logo" class="logo" /></div>
 					<nav>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
@@ -30,11 +31,10 @@
 			</section>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper"style="position: relative; z-index: 1;">
 
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						
 						<div class="inner">
 							<h1>Technetium Engineering</h1>
 							<p>Empowering space autonomy through AI/ML-driven vision systems and on-orbit innovation.</p>
@@ -43,6 +43,7 @@
 							</ul>
 						</div>
 					</section>
+				
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
@@ -58,12 +59,13 @@
 								</div>
 							</div>
 						</section>
-						<section>
+					<!--<section>
 							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada
+										quis. Aliquam dapibus.</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
@@ -75,14 +77,15 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada
+										quis. Aliquam dapibus.</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
-					</section>
+						</section> -->
 
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
@@ -229,6 +232,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/particle-network.min.js"></script>
+			<script>
+				window.addEventListener('DOMContentLoaded', function () {
+					const container = document.getElementById('particle-canvas');
+					if (container) {
+						new ParticleNetwork(container, {
+							particleColor: '#00ffd5',
+							background: '#000000', // Required by the library
+							interactive: true,
+							speed: 'medium',
+							density: 'high'
+						});
+					}
+				});
+			</script>
 
 	</body>
 </html>
