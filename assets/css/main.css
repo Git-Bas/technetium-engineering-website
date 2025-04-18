@@ -2551,7 +2551,7 @@ input, select, textarea {
 					color: #04BFBF;
 				}
 
-				.wrapper.style3 .icon.major:before {      /*"what we do" solid icon color*/
+				.wrapper.style3 .icon.major:before {      /*"what we do" solid ICON color*/
 					color: #193f4a;
 				}
 
@@ -3022,7 +3022,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: rgba(4,19,40, 0.9); /* controls the bacground of pictire as they appeaer*/
 				content: '';
 				display: block;
 				height: 100%;
@@ -3063,12 +3063,12 @@ input, select, textarea {
 				opacity: 1;
 			}
 
-		.spotlights > section:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.05);
+		.spotlights > section:nth-child(1) {
+			background: linear-gradient(to bottom, #026873, #014650);;   /*controls gradient effectof who we are (it is not a gradient effect but slight variaiton in color*/
 		}
 
 		.spotlights > section:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.1);
+			background-color: rgba(0, 0, 0, 0.1);        /*controls gradient effectof what we do*/
 		}
 
 		.spotlights > section.inactive > .image:before,
@@ -3236,19 +3236,19 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #3b10a0;
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #5e42a6;          /* Get in touch */
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #493382;          /* lowe bar color */
 		}
 
 		.wrapper.style2 {
-			background-color: #026873;
+			background-color: #026873;          /*"the technetium team,what we do, our products " background color*/
 		}
 
 		.wrapper.style2-alt {
@@ -3256,7 +3256,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {                
-			background-color: #2f8ca3;         /*"what we do" background color*/
+			background-color: #2f8ca3;         /*"what we do" background color something is overriding this   */
 		}
 
 		.wrapper.style3-alt {
@@ -3882,7 +3882,7 @@ input, select, textarea {
 	}
 
 		#intro p {
-			font-size: 1.25em;
+			font-size: 1.5em;
 		}
 
 			@media screen and (max-width: 980px) {
@@ -3920,18 +3920,42 @@ input, select, textarea {
 }
 
 .logo-container {
-	position: absolute;
-  	top: 1em;
-  	left: 50%;
-  	transform: translateX(-50%);
-  	text-align: center;
+	text-align: center;
+	margin-bottom: 0.1em;
 }
 
 .logo-container .logo {
-	max-width: 300px;
+	max-width: 90%;
 	height: auto;
 }
+
 		
+/*video.bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	z-index: 0;
+	pointer-events: none;
+  }
+*/
+
+.video-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2em;
+  }
+  
+  .video-wrapper video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 10px;
+  }
+  
 		
 		
 		
