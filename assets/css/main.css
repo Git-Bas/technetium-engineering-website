@@ -3956,6 +3956,17 @@ input, select, textarea {
 	border-radius: 10px;
   }
   
-		
+  form {
+	max-width: 600px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+  }
+  
+  input, textarea, button {
+	padding: 10px;
+	font-size: 1rem;
+  }		
 		
 		
