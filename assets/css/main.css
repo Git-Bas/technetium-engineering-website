@@ -97,8 +97,8 @@ input, select, textarea {
 		box-sizing: inherit;
 	}
 
-	body {
-		background: #312450;
+	body { 
+		background: linear-gradient(to bottom, #026873, #014650);;  /*SatViz + About background color*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3064,7 +3064,7 @@ input, select, textarea {
 			}
 
 		.spotlights > section:nth-child(1) {
-			background: linear-gradient(to bottom, #026873, #014650);;   /*controls gradient effectof who we are (it is not a gradient effect but slight variaiton in color*/
+			background: linear-gradient(to bottom, #026873, #014650);   /*controls gradient effect of who we are (it is not a gradient effect but slight variaiton in color*/
 		}
 
 		.spotlights > section:nth-child(3) {
@@ -3236,15 +3236,16 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #3b10a0;
+			background-color: #013440;          /* The Team (About) + SatViz footer*/
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;          /* Get in touch */
+			
+			background: linear-gradient(to bottom, #026873, #013440)        /* Get in touch */
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;          /* lowe bar color */
+			background-color: #013440;          /* Main page Footer */
 		}
 
 		.wrapper.style2 {
@@ -3370,7 +3371,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #328096; /*Header for SatViz + About*/
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3765,7 +3766,7 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);     /*controls the gradient effect of the sidebar links*/
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: linear-gradient(to right, #5e42a6, #b74e91);
