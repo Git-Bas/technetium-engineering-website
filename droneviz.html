@@ -6,11 +6,72 @@
 -->
 <html>
 	<head>
-		<title>SatViz - Hyperspace by HTML5 UP</title>
+		<title>DroneViz - Technetium Engineering</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.slideshow-container {
+				position: relative;
+				width: 100%;
+				max-width: 1280px;
+				height: 720px;
+				margin: 0 auto 2em auto;
+				overflow: hidden;
+				border-radius: 0.5em;
+			}
+
+			.slide {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				opacity: 0;
+				transition: opacity 1s ease-in-out;
+			}
+
+			.slide.active {
+				opacity: 1;
+				z-index: 1;
+			}
+
+			.slide img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+				border-radius: 0.5em;
+			}
+
+			.slide-dots {
+				text-align: center;
+				margin-top: 1em;
+			}
+
+			.slide-dot {
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				margin: 0 5px;
+				border-radius: 50%;
+				background-color: rgba(255, 255, 255, 0.4);
+				cursor: pointer;
+				transition: background-color 0.3s ease;
+			}
+
+			.slide-dot.active {
+				background-color: #ffffff;
+			}
+
+			@media screen and (max-width: 736px) {
+				.slideshow-container {
+					height: 300px;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -22,8 +83,7 @@
 						<li><a href="index.html">Home</a></li>
 						<li><a href="about.html">About</a></li>
 						<li><a href="satviz.html">SatViz</a></li>
-                        <li><a href="Droneviz.html" class="active">DroneViz</a></li>
-						<!-- <li><a href="elements.html">Elements</a></li> -->
+						<li><a href="Droneviz.html" class="active">DroneViz</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -35,15 +95,32 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">DroneViz</h1>
-								<div class="video-wrapper">
-									<video autoplay muted loop playsinline>
-										<source src="images/SatViz.mp4" type="video/mp4">
-										Your browser does not support the video tag.
-									</video>
+
+							<div class="slideshow-container">
+								<div class="slide active">
+									<img src="images/DroneViz1.png" alt="DroneViz image 1" />
 								</div>
-							<p>DroneViz is a compact, low-SWaP counter-UAS detection system built for rapid deployment. Housed in a lightweight, self-contained pod,
-                                 it combines optical sensing with onboard edge processing to deliver real-time drone detection and tracking without external infrastructure.
-                                  Designed for integration on airships, unmanned aircraft, and mobile platforms, DroneViz provides awareness for security and event protection operations.</p>
+								<div class="slide">
+									<img src="images/Detection1.png" alt="Drone detection image 1" />
+								</div>
+								<div class="slide">
+									<img src="images/Detection2.png" alt="Drone detection image 2" />
+								</div>
+							</div>
+
+							<div class="slide-dots">
+								<span class="slide-dot active" onclick="showSlide(0)"></span>
+								<span class="slide-dot" onclick="showSlide(1)"></span>
+								<span class="slide-dot" onclick="showSlide(2)"></span>
+							</div>
+
+							<p>
+								DroneViz is a compact, low-SWaP counter-UAS detection system built for rapid deployment.
+								Housed in a lightweight, self-contained pod, it combines optical sensing with onboard
+								edge processing to deliver real-time drone detection and tracking without external
+								infrastructure. Designed for integration on airships, unmanned aircraft, and mobile
+								platforms, DroneViz provides awareness for security and event protection operations.
+							</p>
 						</div>
 					</section>
 
@@ -53,7 +130,8 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Untitled. All rights reserved.</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -66,6 +144,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				let currentSlide = 0;
+				const slides = document.querySelectorAll('.slide');
+				const dots = document.querySelectorAll('.slide-dot');
+
+				function showSlide(index) {
+					slides.forEach((slide) => slide.classList.remove('active'));
+					dots.forEach((dot) => dot.classList.remove('active'));
+
+					slides[index].classList.add('active');
+					dots[index].classList.add('active');
+					currentSlide = index;
+				}
+
+				function nextSlide() {
+					const next = (currentSlide + 1) % slides.length;
+					showSlide(next);
+				}
+
+				setInterval(nextSlide, 4000);
+			</script>
 
 	</body>
 </html>
