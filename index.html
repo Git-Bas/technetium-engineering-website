@@ -1,234 +1,231 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Technetium Engineering</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#03111d" />
+  <meta name="description" content="Technetium Engineering develops edge perception, onboard AI, visual navigation, 3D reconstruction, and digital-twin validation systems for spacecraft and autonomous airborne platforms." />
+  <meta property="og:title" content="Technetium Engineering | Edge Perception for Space and Air" />
+  <meta property="og:description" content="Perception systems that detect, estimate, validate, and support onboard decisions in real mission environments." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/satviz-pose-poster.jpg" />
+  <title>Technetium Engineering | Edge Perception for Space and Air</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/technetium-wordmark-white-transparent.png" as="image" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="page-glow" aria-hidden="true"></div>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">Services</a></li>
-							<li><a href="#three">Products</a></li>
-							<li><a href="#four">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+  <header class="site-header" data-header>
+    <a class="brand" href="#hero" aria-label="Technetium Engineering home">
+      <img src="assets/technetium-wordmark-white-transparent.png" alt="Technetium Engineering" />
+    </a>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						
-						<div class="inner">
-							<h1>Technetium Engineering</h1>
-							<p>Empowering space autonomy through AI/ML-driven vision systems and on-orbit innovation.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#capabilities">Capabilities</a>
+      <a href="#satviz">SatViz</a>
+      <a href="#droneviz">DroneViz</a>
+      <a href="#validation">Validation</a>
+      <a href="#contact" class="nav-button">Contact</a>
+    </nav>
+  </header>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.png" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>The Technetium Team</h2>
-									<p>Engineers and PhDs united by the same passion for space exploration, spacecraft autonomy, and cutting edge on-orbit services.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+  <main id="main">
+    <section id="hero" class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Edge perception · space + air</p>
+        <h1>Perception systems for missions that cannot wait for the ground.</h1>
+        <p class="hero-lede">Technetium turns imagery into detection, pose, and RTOS-aware action for targets that are unknown, distant, or hard to see.</p>
+        <div class="hero-actions">
+          <a href="#satviz" class="button primary">Explore SatViz</a>
+          <a href="#capabilities" class="button secondary">View capabilities</a>
+        </div>
+        <div class="proof-strip" aria-label="Company focus metrics">
+          <div><strong>Edge</strong><span>Real-time perception outputs</span></div>
+          <div><strong>Space</strong><span>Non-cooperative visual navigation</span></div>
+          <div><strong>Air</strong><span>Compact DroneViz payloads</span></div>
+        </div>
+      </div>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Technetium Engineering develops next-generation vision systems for space applications, leveraging cutting-edge AI/ML to enable autonomous navigation, object detection, and 3D reconstruction in orbit.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-vr-cardboard"></span>
-									<h3>Space Domain Awareness</h3>
-									<p>Unknown object detection, assessment, id, and prediction</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-satellite"></span>
-									<h3>RPO / OOS</h3>
-									<p>Space Mission and Design Analysis.<br>
-										Optical Navigation with Cameras and LiDAR.<br>
-										Path Planning Algorithms </p>
-								</section>
-								<section>
-									<span class="icon solid major fa-clone"></span>
-									<h3>Digital Twin Environment</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cubes"></span>
-									<h3>3D recontruction</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-shield-alt"></span>
-									<h3>Cybersecurity</h3>
-									<p>Embedded development using RTCA standards.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-plane"></span>
-									<h3>Flight Test Engineering</h3>
-									<p>Stability and Control Analysis.<br>
-									   Fixed Wing and Helicopter Test Performance.<br>
-									   Test and Evaluations of - Avionics, Propulsion, Structures</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
-				
-				<!-- three -->
-				<section id="three" class="wrapper style2 spotlights">
-					<div class="inner">
-					 <h2>Our Products</h2>
-					 <p>Technetium Engineering designs and builds state-of-the-art hardware and software systems to support on-orbit services, visual navigation, and spacecraft autonomy.</p>
-					 <section>
-					  <a class="image" href="#">
-					   <img alt="SatViz Render" data-position="center center" src="images/satviz_render.jpg"/>
-					  </a>
-					  <div class="content">
-					   <div class="inner">
-						<h3>SatViz</h3>
-						<p>An intelligent vision system for spacecraft. Provides real-time 3D reconstruction, RPOD capabilities, and ML-powered situational awareness.</p>
-					   </div>
-					  </div>
-					 </section>
-					</div>
-				   </section>
+      <div class="hero-panel reveal" aria-label="SatViz demonstration panel">
+        <div class="panel-topline">
+          <span class="status-dot"></span>
+          <span>SatViz pose loop</span>
+          <span class="panel-mode">in-space imagery</span>
+        </div>
+        <div class="video-shell">
+          <video autoplay muted loop playsinline controls poster="assets/satviz-pose-poster.jpg">
+            <source src="assets/satviz-pose-loop.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="telemetry-grid" aria-hidden="true">
+          <span>target: unknown</span>
+          <span>output: pose</span>
+          <span>loop: onboard-ready</span>
+        </div>
+        <p class="media-note">Aerospace Corporation imagery with SatViz pose estimation on a fully unknown object.</p>
+      </div>
+    </section>
 
+    <section id="capabilities" class="section-shell capabilities reveal">
+      <div class="section-heading">
+        <p class="eyebrow"><span></span> What we build</p>
+        <h2>From pixels to action.</h2>
+        <p>We focus on the hard middle layer: perception that can be integrated into the platform, validated before flight, and trusted enough to inform autonomous behavior.</p>
+      </div>
 
-				<!-- four -->
-					<section id="four" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+      <div class="capability-grid">
+        <article class="capability-card">
+          <div class="icon-orb">01</div>
+          <h3>Visual navigation</h3>
+          <p>Pose estimation, target tracking, inspection cues, and proximity-operations awareness for cooperative and non-cooperative objects.</p>
+        </article>
+        <article class="capability-card">
+          <div class="icon-orb">02</div>
+          <h3>3D reconstruction</h3>
+          <p>Scene understanding and reconstruction pipelines that support geometry recovery, inspection, and change detection.</p>
+        </article>
+        <article class="capability-card">
+          <div class="icon-orb">03</div>
+          <h3>Small-object detection</h3>
+          <p>Low-SWaP payloads and AI models for drone detection, tracking, and discrimination in field imagery.</p>
+        </article>
+        <article class="capability-card">
+          <div class="icon-orb">04</div>
+          <h3>Digital twin validation</h3>
+          <p>Synthetic scenes, sensor effects, lighting sweeps, and failure-case generation for faster testing before field deployment.</p>
+        </article>
+        <article class="capability-card">
+          <div class="icon-orb">05</div>
+          <h3>RTOS-aware autonomy</h3>
+          <p>Decision loops designed around timing, telemetry, watchdogs, safe fallback behavior, and embedded-system constraints.</p>
+        </article>
+        <article class="capability-card">
+          <div class="icon-orb">06</div>
+          <h3>Flight-test engineering</h3>
+          <p>Operationally grounded engineering support for system integration, test planning, and mission-readiness evaluation.</p>
+        </article>
+      </div>
+    </section>
 
-			</div>
+    <section id="satviz" class="section-shell product-section satviz reveal">
+      <div class="product-copy">
+        <p class="eyebrow"><span></span> SatViz</p>
+        <h2>Vision-based awareness for spacecraft operating near unknown objects.</h2>
+        <p>SatViz is designed to estimate state from imagery when a mission does not have a clean CAD model, cooperative markers, or ideal lighting. It converts vision into information the spacecraft can use: detection, tracking, pose, confidence, and guidance-relevant context.</p>
+        <div class="feature-list">
+          <span>No target CAD dependency</span>
+          <span>Pose estimation from real imagery</span>
+          <span>Inspection and RPOD support</span>
+          <span>Designed for onboard integration</span>
+        </div>
+      </div>
+      <div class="mission-card">
+        <video autoplay muted loop playsinline controls aria-label="SatViz pose-estimation overlay on spacecraft imagery">
+          <source src="assets/web_vid3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="mission-overlay">
+          <strong>Mission output</strong>
+          <span>target detection · 6DOF pose</span>
+        </div>
+      </div>
+    </section>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+    <section id="droneviz" class="section-shell droneviz reveal">
+      <div class="section-heading narrow">
+        <p class="eyebrow"><span></span> DroneViz</p>
+        <h2>Compact airborne perception for C-UAS.</h2>
+        <p>DroneViz packages detection hardware and software for teams that need a deployable perception payload rather than a lab-only demo.</p>
+      </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <div class="image-showcase">
+        <figure class="showcase-card large">
+          <img class="low-light-track" src="assets/low-light-drone-track.png" alt="Low-light DroneViz tracking view with bounding box around a small drone" loading="lazy" />
+          <figcaption><strong>Low-light tracking</strong><span>Maintains detection under difficult visibility and contrast.</span></figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="assets/prototype-perception-rig.png" alt="DroneViz prototype perception hardware rig" loading="lazy" />
+          <figcaption><strong>Integration hardware</strong><span>Compact device architecture for platform fit checks.</span></figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <img src="assets/droneviz-field-detection.png" alt="Outdoor DroneViz field detection screen showing tracked targets" loading="lazy" />
+          <figcaption><strong>Outdoor detection</strong><span>Field imagery with target and false-positive discrimination.</span></figcaption>
+        </figure>
+      </div>
+    </section>
 
-	</body>
+    <section id="validation" class="section-shell validation reveal">
+      <div class="validation-copy">
+        <p class="eyebrow"><span></span> Digital twin + embedded validation</p>
+        <h2>Find the edge cases before they become mission cases.</h2>
+        <p>Autonomy fails in the gaps between beautiful demos and real operating constraints. Technetium uses synthetic data, simulation, hardware-in-the-loop thinking, and flight-test discipline to expose those gaps early.</p>
+      </div>
+
+      <div class="validation-panel" aria-label="Validation workflow graphic">
+        <div class="workflow-node active"><span>01</span><strong>Model environment</strong><small>Lighting, geometry, range, sensor effects</small></div>
+        <div class="workflow-link"></div>
+        <div class="workflow-node"><span>02</span><strong>Stress perception</strong><small>Occlusion, blur, saturation, unknown targets</small></div>
+        <div class="workflow-link"></div>
+        <div class="workflow-node"><span>03</span><strong>Integrate loop</strong><small>Timing, confidence, watchdogs, telemetry</small></div>
+        <div class="workflow-link"></div>
+        <div class="workflow-node"><span>04</span><strong>Test decision</strong><small>Inspect, avoid, reacquire, alert, hold</small></div>
+      </div>
+    </section>
+
+    <section class="section-shell mission-fit reveal" aria-label="Mission fit">
+      <div class="fit-card">
+        <h2>Built for teams moving from prototype to mission integration.</h2>
+        <div class="fit-grid">
+          <div><span>01</span><strong>Space companies</strong><p>Inspection, proximity operations, on-orbit servicing, and visual navigation.</p></div>
+          <div><span>02</span><strong>Defense and UAS teams</strong><p>Small-object detection, edge sensing, payload integration, and field validation.</p></div>
+          <div><span>03</span><strong>Research partners</strong><p>Digital twin generation, perception test campaigns, and autonomy experiments.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-shell contact reveal">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <p class="eyebrow"><span></span> Start a mission conversation</p>
+          <h2>Tell us what your platform needs to see, estimate, or decide.</h2>
+          <p>Share the sensor, environment, target type, platform constraints, and the decision the system needs to support. We will respond with a practical integration path.</p>
+          <a class="direct-email" href="mailto:info@technetiumengineering.com">info@technetiumengineering.com</a>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+          <label>
+            Name
+            <input name="name" type="text" autocomplete="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Mission need
+            <textarea name="message" rows="5" placeholder="Example: detect and track non-cooperative objects from an onboard camera under low light..." required></textarea>
+          </label>
+          <button class="button primary" type="submit">Compose email</button>
+          <p class="form-note">This static form opens your email client with the message pre-filled.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <img src="assets/technetium-logo-white-transparent.png" alt="Technetium Engineering" />
+    <p>© 2026 Technetium Engineering LLC. Edge perception, autonomy, and validation systems.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
