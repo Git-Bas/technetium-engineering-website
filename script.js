@@ -74,7 +74,7 @@ if (form) {
     const message = String(data.get('message') || '').trim();
     const subject = encodeURIComponent(`Technetium mission inquiry from ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMission need:\n${message}`);
-    window.location.href = `mailto:hello@technetiumengineering.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@technetiumengineering.com?subject=${subject}&body=${body}`;
   });
 }
 
