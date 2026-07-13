@@ -62,7 +62,7 @@
         </div>
         <div class="video-shell">
           <video autoplay muted loop playsinline controls poster="assets/satviz-pose-poster.jpg">
-            <source src="assets/satviz-pose-loop.mp4" type="video/mp4" />
+            <source src="assets/satviz-pose-loop_with_logo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -135,7 +135,7 @@
         </video>
         <div class="mission-overlay">
           <strong>Mission output</strong>
-          <span>target detection · 6DOF pose</span>
+          <span>target detection &middot; 6DOF pose</span>
         </div>
       </div>
     </section>
@@ -159,6 +159,23 @@
         <figure class="showcase-card">
           <img src="assets/droneviz-field-detection.png" alt="Outdoor DroneViz field detection screen showing tracked targets" loading="lazy" />
           <figcaption><strong>Outdoor detection</strong><span>Field imagery with target and false-positive discrimination.</span></figcaption>
+        </figure>
+      </div>
+
+      <div class="pod-specs" aria-label="DroneViz pod specifications">
+        <div class="spec-tab">Pod specs</div>
+        <div class="spec-copy">
+          <dl class="spec-grid">
+            <div><dt>Weight</dt><dd>14.7 oz</dd></div>
+            <div><dt>Power</dt><dd>5 V DC</dd></div>
+            <div><dt>Camera</dt><dd>640x480 px resolution, 48.8&deg; FoV</dd></div>
+            <div><dt>Comm</dt><dd>Wi-Fi / USB-C</dd></div>
+            <div><dt>Temp Range</dt><dd>0 &deg;C to 40 &deg;C</dd></div>
+          </dl>
+          <p class="mavlink-note">DroneViz can stream detection data and payload status to the ground over MAVLink, the lightweight drone messaging protocol used between aircraft, onboard components, and ground-control systems.</p>
+        </div>
+        <figure class="spec-pod-image">
+          <img src="assets/DroneViz2.png" alt="DroneViz2 pod with integrated long-range radio antennas" loading="lazy" />
         </figure>
       </div>
     </section>
