@@ -140,6 +140,33 @@
       </div>
     </section>
 
+    <section class="section-shell rpo-demo reveal" aria-labelledby="rpo-title">
+      <div class="rpo-copy">
+        <h2 id="rpo-title">Autonomous Rendezvous &amp; Proximity Operations</h2>
+        <p>SatViz detects and tracks a spacecraft throughout a complete RPO trajectory, from long-range acquisition to close-proximity operations. Using a single monocular camera, the same flight software maintains target track as the spacecraft transitions from a small unresolved target to a fully resolved object while continuously estimating its relative trajectory.</p>
+      </div>
+
+      <div class="rpo-media">
+        <div class="panel-topline">
+          <span class="status-dot"></span>
+          <span>Full RPO Trajectory</span>
+          <span class="panel-mode">9 km to proximity</span>
+        </div>
+
+        <video autoplay muted controls loop playsinline preload="metadata" poster="assets/full-rpo-trajectory-poster.jpg" aria-label="SatViz tracking a spacecraft throughout a full rendezvous and proximity operations trajectory">
+          <source src="assets/Full%20RPO%20Trajectory.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="telemetry-grid rpo-telemetry" aria-label="RPO system characteristics">
+          <span>Single monocular camera</span>
+          <span>No operator in the loop</span>
+          <span>No target-specific template</span>
+          <span>No per-target tuning</span>
+        </div>
+      </div>
+    </section>
+
     <section id="droneviz" class="section-shell droneviz reveal">
       <div class="section-heading narrow">
         <p class="eyebrow"><span></span> DroneViz</p>

@@ -368,6 +368,7 @@ h1 {
 
 .capabilities,
 .product-section,
+.rpo-demo,
 .droneviz,
 .validation,
 .mission-fit,
@@ -477,6 +478,49 @@ h1 {
 }
 .mission-overlay strong { color: white; }
 .mission-overlay span { color: var(--muted); font-size: 0.9rem; }
+
+.rpo-demo {
+  display: grid;
+  gap: clamp(1.2rem, 2.5vw, 2rem);
+}
+.rpo-media {
+  display: grid;
+  gap: 0.9rem;
+  overflow: hidden;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  padding: 0.72rem;
+  background: linear-gradient(180deg, rgba(10, 24, 39, 0.78), rgba(6, 16, 29, 0.58));
+  box-shadow: var(--shadow);
+}
+.rpo-media > .panel-topline {
+  padding-bottom: 0.1rem;
+}
+.rpo-media video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(177, 210, 246, 0.1);
+  border-radius: 25px;
+  background: #000;
+  object-fit: contain;
+}
+.rpo-copy h2 {
+  font-size: clamp(1.75rem, 3.15vw, 3.35rem);
+}
+.rpo-copy {
+  max-width: 940px;
+}
+.rpo-copy > p:not(.eyebrow) {
+  margin: 0.9rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.68;
+}
+.rpo-telemetry {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0.1rem 0.15rem 0.15rem;
+}
 
 .image-showcase {
   display: grid;
@@ -762,6 +806,7 @@ h1 {
   .mission-card { max-width: 840px; }
   .capability-grid,
   .fit-grid { grid-template-columns: repeat(2, 1fr); }
+  .rpo-telemetry { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .image-showcase { grid-template-columns: 1fr; }
   .pod-specs { grid-template-columns: 1fr; }
   .spec-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -808,6 +853,7 @@ h1 {
   .hero-actions .button { width: 100%; }
   .panel-mode { display: none; }
   .feature-list span { width: 100%; justify-content: center; }
+  .rpo-telemetry { grid-template-columns: 1fr; }
   .showcase-card figcaption { position: static; border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
   .showcase-card img,
   .showcase-card.large img { min-height: 240px; }
